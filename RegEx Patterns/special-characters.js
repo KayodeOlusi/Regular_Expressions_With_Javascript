@@ -26,4 +26,7 @@
 
 //To match a character we use the escape character e.g
 /abc\*/
-//This matches only 'abc*' since we used escape character to disable * character 
+//This matches only 'abc*' since we used escape character to disable * character
+
+/abc\./
+//This matches 'abc.'
