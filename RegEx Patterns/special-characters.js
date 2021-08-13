@@ -7,6 +7,9 @@
 // ? : The zero-or-one quantifier (makes a preceding char optional)
 // . : Any character whatsoever at least one  (except the newline character)
 // * : The 0-or-more quantifier (a bit like +)
+// ^ : This outside a character set '[]' is used to start a validation
+// $ : This at the end of the expression is used to end a validation
+// | : This is a conditional special character 
 
 //Examples
 /hello?/
@@ -30,3 +33,15 @@
 
 /abc\./
 //This matches 'abc.'
+
+/^[a-z]{5}$/
+//This matches any word wuth 5 letters only
+
+/p|t/
+// This matches letter p or t
+
+/(p|t)op/
+//This matches pop or top
+
+/(pop|top|cup) up/
+//This matches pop up, top up, cup up. NOTE the space in-between each word
