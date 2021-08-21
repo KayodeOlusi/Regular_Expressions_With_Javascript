@@ -9,11 +9,12 @@
 // * : The 0-or-more quantifier (a bit like +)
 // ^ : This outside a character set '[]' is used to start a validation
 // $ : This at the end of the expression is used to end a validation
-// | : This is a conditional special character 
+// | : This is a conditional special character
+// To match a word of specific length, use ^ and $ sign  
 
 //Examples
 /hello?/
-//This sets an option to match any word that contains any letter in this word alone e.g hllo,hello,helo e.t.c
+//This sets an option to match any word that contains the letter before the '?' sign in this word alone e.g hllo,hello,helo e.t.c
  
 /he?llo?/
 //This matches hello, hllo,hlo e.t.c
@@ -35,7 +36,7 @@
 //This matches 'abc.'
 
 /^[a-z]{5}$/
-//This matches any word wuth 5 letters only
+//This matches any word with 5 letters only
 
 /p|t/
 // This matches letter p or t
